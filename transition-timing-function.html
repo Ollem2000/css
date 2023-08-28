@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="pattern.css">
+</head>
+<body>
+		<div class="line ease">ease</div>
+		<div class="line ease"></div>
+		<div class="line ease"></div>
+		<div class="line ease"></div>
+		<button>hover</button>
+	<style>
+	div{
+		color: white;
+		background: salmon;
+		border-radius: 4px;
+		width: 256px;
+		padding: 8px;
+	}
+		ease{
+			transition-timing-function: ease;
+		}
+	button{
+		background: lightblue;
+		border: none;
+		padding: 16px;
+	}
+	button:hover .line{
+		background: red;
+		width: 10px;
+		transition-duration: 4s;
+	}
+	</style>
+</body>
+</html>
